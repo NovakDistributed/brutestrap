@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+        Brutestrap Web Framework
+        (C) 2108 Novak Distributed
+        MIT License
+    -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            :root {
+                --background-color: white;
+                --text-color: black;
+                --accent-color: blue;
+            }
+            
+            body {
+                max-width: 600px;
+                margin-left: auto;
+                padding-left: 5px;
+                padding-right: 5px;
+                margin-right: auto;
+                margin-top: 5em;
+                margin-bottom: 5em;
+                font-size: 130%;
+                font-family: monospace;
+                color: var(--text-color);
+                background-color: var(--background-color);
+            }
+            
+            h1, h2, h3, h4, h5, h6 {
+                font-family: sans;
+            }
+             
+            a {
+                color: var(--accent-color);
+            }
+            
+            a:visited {
+                color: var(--text-color);
+            }
+            
+            a:active {
+                color: var(--background-color);
+                background-color: var(--accent-color);
+            }
+            
+            a:active > * {
+                color: var(--background-color);
+                background-color: var(--accent-color);
+            }
+            
+            blockquote::before {
+                content: open-quote;
+                font-size: 200%;
+                vertical-align: -0.4em;
+                line-height: 0.1em;
+                font-family: serif;
+            }
+            blockquote::after {
+                content: close-quote;
+                font-size: 200%;
+                vertical-align: -0.4em;
+                line-height: 0.1em;
+                font-family: serif;
+            }
+            
+            img, video {
+                max-width: 100%;
+                max-height: 100%;
+            }
+            
+            /* https://stackoverflow.com/a/16012979 */
+            blink {
+                animation: blink-animation 1s steps(5, start) infinite;
+            }
+            @keyframes blink-animation {
+                to {
+                    visibility: hidden;
+                }
+            }
+        </style>
+        <script type="text/javascript">
+            function theme(bg, text, accent) {
+                let style = document.documentElement.style
+                style.setProperty('--background-color', bg)
+                style.setProperty('--text-color', text)
+                style.setProperty('--accent-color', accent)
+            }
+        </script>
+        <!-- Replace text below with your web site -->
+        <title>Brutestrap: Brutalist Web Design</title>
+    </head>
+    <body>
+        <h1>Brutestrap: Brutalist Web Design</h1>
+        <p>This web site is a stunning example of <a href="https://www.uxbrutalism.com/">brut</a><a href="http://brutalistwebsites.com/">alist w</a><a href="http://motherfuckingwebsite.com/">eb d</a><a href="http://www.brutalistframework.com">esign</a> using Brutestrap.<p>
+        <p>When not even <a href="http://contemporary-home-computing.org/prof-dr-style/">Prof. Dr. Style</a> can make your web site cool, you need Brutestrap.</p>
+        
+        <h2>Stuff. On the Screen.</h2>
+        <a href="https://www.uxbrutalism.com/"><blockquote cite="https://www.uxbrutalism.com/">
+            The first (and only) step is to throw elements on the screen, without worrying too much about how they work together.
+        </blockquote></a>
+        <p>This screen has elements.</p>
+        
+        <h2><blink>ATTENTION!</blink></h2>
+        <a href="https://www.uxbrutalism.com/"><blockquote>
+            The secret to great brutalist UX is contrast. Make sure you also incorporate motion to help your users focus on what's really important on the screen.
+        </blockquote></a>
+        <p>The <strong><blink>really important</blink></strong> things here are obvious. Brutestrap includes built-in <b>&lt;blink&gt;</b> tag ployfill.</p>
+        
+        <h2>Responsive Design.</h2>
+        <p>As you change the size of your browser, Brutestrap web sites respond by becoming smaller or larger, and occupying more or less of your screen.</p>
+        <p>If you had a phone that you could change the size of, that would work too.</p>
+        
+        <h2>Themes.</h2>
+        <p>Brutestrap web sites have <i>Themes</i>. Resize this page to see some <i>themes</i> in action.</p>
+        <ul>
+            <li><button onclick="theme('blue', 'yellow', 'lime')">Ocean Breeze</a></li>
+            <li><button onclick="theme('red', 'white', 'black')">Summer Sunset</a></li>
+            <li><button onclick="theme('orange', 'black', 'white')">Fall Freshness</a></li>
+            <li><button onclick="theme('black', 'yellow', 'orange')">Dusk</a></li>
+            <li><button onclick="theme('white', 'black', 'blue')">Normal</a></li>
+        </ul>
+        
+        <h2>Images. You Can See Them.</h2>
+        <p>Brutestrap crams your images into the space available for them, without regard for petty aesthetic concerns.</p> 
+        <img src="snack.jpg">
+        <p>Both JPG and PNG images are supported. Other types of images are also supported but are frivolous and unnecessary.</p>
+        <img src="boot.png">
+        
+        <h2>You Will Now Download Brutestrap.</h2>
+        <p><a href="" download>Click here</a> (or "Save Link As") to install Brutestrap and make your web sites acceptable.</p>
+        
+        <small>(C) 2018 Novak Distributed</small>
+    </body>
+</html>
